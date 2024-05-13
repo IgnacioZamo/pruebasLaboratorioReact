@@ -2,16 +2,17 @@ import { useState } from "react"
 
 
 const Ej1_3 = ()=>{
-
-const handleSubmitToDoList = (e)=>{
-    const [list, setList] = useState("");
-    e.preventDefault();
-    console.log("funciona")
-
     
-}
+    const [list, setList] = useState("");
+    const [listGroup, setListGroup] = useState([]);
 
-
+    const handleSubmitToDoList = (e)=>{
+        e.preventDefault();
+        if(!list.trim()) return; //evitara campos vacios
+        const newTask = {id: Date.now(), text:list}
+        setListGroup([...listGroup,newTask])
+        setList("");
+    };
 
     return (
         <div className="border-t-2 pt-10">
@@ -20,10 +21,27 @@ const handleSubmitToDoList = (e)=>{
             <section>
                 <h3>Escriba una toDoList</h3>
                 <form onSubmit={handleSubmitToDoList}>
-                    <input className="border rounded-lg" type="text" placeholder="Describa su actividad"/>
-                    <button className="border px-3 py-2" type="submit" >Agendar</button>
+                    <input 
+                        className="border rounded-lg" 
+                        type="text" 
+                        placeholder="Describa su actividad" 
+                        value= {list} 
+                        onChange={(e)=> setList(e.target.value)}
+                        />
+                    <button className="border px-3 py-2" type="submit">Agendar</button>
                 </form>
-                
+            </section>
+
+
+
+            <section className="w-full py-10 border rounded-lg">
+                <h3>Tareas pendientes:</h3>
+                <ul>
+                    {listGroup.map(listt =>(
+                        <li key={listt.id}>{listt.text}</li>
+                    ))}
+                </ul>
+
             </section>
 
         </div>

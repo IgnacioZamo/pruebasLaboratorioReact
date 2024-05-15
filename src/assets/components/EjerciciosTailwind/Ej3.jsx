@@ -26,9 +26,9 @@ const Ej3 = () => {
                     <h1 className='text-5xl font-bold mb-5' ><span className='text-slate-100'>LIVE YOUR</span> <br /> <span className='text-orange-500'>ADVENTURE</span></h1>
                     <p className='pr-10 text-white text-sm leading-relaxed'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae mollitia <br /> corporis. Voluptas quisquam aspernatur quasi odit suscipit rem, <br /> repellat dolore delectus animi nostrum similique, maxime vitae autem!</p>
                 </div>
-                <div>
-                    <div className='relative bg-gradient-to-r from-orange-600 to-orange-400 w-48 h-36 border border-orange-300 border-double border-b-4 border-r-4' style={{borderRadius: '4rem 0 1rem 4rem'}}>
-                        <img className='absolute bottom-0 right-1/2 h-36' src="https://arquitecturahb.com/wp-content/uploads/2019/05/001.png" alt="" />
+                <div className='flex justify-center items-center'>
+                    <div className='relative bg-gradient-to-r from-orange-600 to-orange-400 w-64 h-44 border border-orange-300 border-double border-b-4 border-r-4' style={{borderRadius: '4rem 0 1rem 4rem'}}>
+                        <img className='absolute cover bottom-0 h-64' src="https://www.pngall.com/wp-content/uploads/2016/04/Happy-Person-Transparent.png" alt="" />
 
                     </div>
                 </div>

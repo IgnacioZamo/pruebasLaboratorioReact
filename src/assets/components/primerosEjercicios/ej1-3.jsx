@@ -59,9 +59,9 @@ const Ej1_3 = ()=>{
 
                     {listGroup.map(listt =>(
                         <div 
-                        className={`grid grid-cols-2 gap-8 items-center mb-4 pl-10 ${listt.completed ? 'bg-green-400' : ''}`}
+                        className={`grid grid-cols-2 gap-8 items-center mb-4 pl-72 ${listt.completed ? 'bg-green-400' : ''}`}
                         key={listt.id}>
-                           <li className="text-center" >{listt.text}</li>
+                           <li className="text-start" >{listt.text}</li>
                            <div>
                             <button className="border px-3 py-2" onClick={()=> handleButtonCompleteTask(listt.id)}>{listt.completed? "Desmarcar":"Completar"}</button>
                             <button className="border px-3 py-2" onClick={()=> handleButtonDelete(listt.id)}>Eliminar</button>

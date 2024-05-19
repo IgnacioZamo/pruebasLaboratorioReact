@@ -23,7 +23,10 @@ const Ej4 = () => {
                 <p className='text-slate-100'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium consequuntur odio eum, impedit ex necessitatibus sed enim exercitationem nulla alias nihil aspernatur nesciunt? Similique!
                 </p>
-
+            </div>
+            <div className='w-4/5 ml-auto bg-gradient-to-r from-lime-400 to-lime-600 relative' style={{borderRadius:'100% 0% 98% 2% / 36% 100% 0% 64%' }}>
+                <p style={{transform: 'translate(50%, -50%) rotate(270deg)'}} className='absolute right-6 top-1/2 text-5xl text-slate-600/30 font-bold'>ZETA</p>
+                <img style={{transform: 'translateY(-50%)'}} className='absolute right-20 top-24 h-80' src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png" alt="" />
 
             </div>
 

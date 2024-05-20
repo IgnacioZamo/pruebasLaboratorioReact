@@ -20,14 +20,21 @@ const Ej4 = () => {
         <div className='grid grid-cols-2 w-full mt-10 py-10'>
             <div className='w-4/5 mx-auto'>
                 <h2 className='text-5xl text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100 font-bold mb-10'>Let's explore your own <span className='text-lime-500'>VR</span> world</h2>
-                <p className='text-slate-100'>
+                <p className='text-slate-100 mb-10'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium consequuntur odio eum, impedit ex necessitatibus sed enim exercitationem nulla alias nihil aspernatur nesciunt? Similique!
                 </p>
+                <div className='flex justify-around'>
+                    <button className='bg-gradient-to-r from-lime-400 via-lime-500 to-lime-400 px-3 py-2 rounded-xl font-bold text-sm active:text-slate-200'>Explore Now</button>
+                    <div className='hover:cursor-pointer hover:scale-105 transition flex gap-5 items-center'>
+                        <img className='h-12' src="https://www.freeiconspng.com/uploads/play-button-icon-png-5.png" alt="" />
+                        <p className='text-slate-300'>Learn More</p>
+                    </div>
+                </div>
+
             </div>
             <div className='w-4/5 ml-auto bg-gradient-to-r from-lime-400 to-lime-600 relative' style={{borderRadius:'100% 0% 98% 2% / 36% 100% 0% 64%' }}>
                 <p style={{transform: 'translate(50%, -50%) rotate(270deg)'}} className='absolute right-6 top-1/2 text-5xl text-slate-600/30 font-bold'>ZETA</p>
-                <img style={{transform: 'translateY(-50%)'}} className='absolute right-20 top-24 h-80' src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png" alt="" />
-
+                <img style={{transform: 'translateX(50%)'}} className='absolute right-1/2 bottom-0 h-80' src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png" alt="" />
             </div>
 
         </div>

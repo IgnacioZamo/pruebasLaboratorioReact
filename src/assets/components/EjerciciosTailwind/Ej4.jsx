@@ -17,8 +17,11 @@ const Ej4 = () => {
                 <button onClick={(e)=>e.preventDefault()} className='text-slate-600 text-sm font-bold px-3 py-2 border-2 border-lime-500 rounded-lg active:bg-lime-600 active:text-black '>Sign Up</button>
             </div>
         </navbar>
-        <div className='grid grid-cols-2 w-full mt-10 py-10'>
+        <div className='grid grid-cols-2 w-full my-10 py-10'>
             <div className='w-4/5 mx-auto'>
+
+                {/* texto con gradiente ↓*/}
+
                 <h2 className='text-5xl text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100 font-bold mb-10'>Let's explore your own <span className='text-lime-500'>VR</span> world</h2>
                 <p className='text-slate-100 mb-10'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium consequuntur odio eum, impedit ex necessitatibus sed enim exercitationem nulla alias nihil aspernatur nesciunt? Similique!
@@ -36,6 +39,42 @@ const Ej4 = () => {
                 <p style={{transform: 'translate(50%, -50%) rotate(270deg)'}} className='absolute right-6 top-1/2 text-5xl text-slate-600/30 font-bold'>ZETA</p>
                 <img style={{transform: 'translateX(50%)'}} className='absolute right-1/2 bottom-0 h-80' src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png" alt="" />
             </div>
+        </div>
+
+        <div className='py-10'>
+            <h2 className=' mb-10 w-2/5 mx-auto text-center text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100'>Discover the <span className='text-lime-500'>world</span> <br/> based your loves</h2>
+            <div className='p-10 w-4/5 mx-auto border border-slate-500 rounded-xl'>
+                <div className='flex justify-around mb-10'>
+                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
+                        <img className='h-16 w-16' src="https://cdn-icons-png.flaticon.com/512/8541/8541858.png" alt="" />
+                    </div>
+                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
+                        <img className='h-16 w-16' src="https://cdn-icons-png.flaticon.com/512/3893/3893024.png" alt="" />
+                    </div>
+                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
+                        <img className='h-16 w-16' src="https://static-00.iconduck.com/assets.00/openai-icon-1011x1024-uztb7qme.png" alt="" />
+                    </div>
+                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
+                        <img className='h-16 w-16' src="https://cdn-icons-png.flaticon.com/512/2097/2097443.png" alt="" />
+                    </div>
+                </div>
+                <div className='flex justify-around'>
+                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
+                        <img className='h-16 w-16' src="https://static-00.iconduck.com/assets.00/heart-icon-512x461-rdoishra.png" alt="" />
+                    </div>
+                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
+                        <img className='h-16 w-16' src="https://simpleicon.com/wp-content/uploads/business-man-1.png" alt="" />
+                    </div>
+                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
+                        <img className='h-16 w-16' src="https://static.thenounproject.com/png/110006-200.png" alt="" />
+                    </div>
+                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
+                        <img className='h-16 w-16' src="https://static.thenounproject.com/png/3063623-200.png" alt="" />
+                    </div>
+                </div>
+                
+            </div>                
+
 
         </div>
 

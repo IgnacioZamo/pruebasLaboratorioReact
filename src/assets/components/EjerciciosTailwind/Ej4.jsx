@@ -1,13 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 
-const funcionBotones = ()=>{
-    const [itemSel, setItemSel] = useEffect(null)
 
-    const handleClick = (idx)=>{
-        setItemSel(idx)
-    }
-}
 
 
 const Ej4 = () => {
@@ -51,11 +45,11 @@ const Ej4 = () => {
             </div>
         </div>
 
-        <div className='py-10'>
+        <div className='py-10 mb-10'>
             <h2 className=' mb-10 w-2/5 mx-auto text-center text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100'>Discover the <span className='text-lime-500'>world</span> <br/> based your loves</h2>
             <div className='p-10 w-4/5 mx-auto border border-slate-500 rounded-xl'>
                 <div className='flex justify-around mb-10'>
-                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition' onClick={handleClickAction}>
+                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
                         <img className='h-16 w-16' src="https://cdn-icons-png.flaticon.com/512/8541/8541858.png" alt="" />
                     </div>
                     <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
@@ -82,9 +76,18 @@ const Ej4 = () => {
                         <img className='h-16 w-16' src="https://static.thenounproject.com/png/3063623-200.png" alt="" />
                     </div>
                 </div>
-                
             </div>                
+        </div>
 
+        <div className='grid grid-cols-2 py-10'>
+            <div className='w-4/5 mr-auto bg-gradient-to-r from-lime-400 to-lime-600 relative h-64' style={{borderRadius:'55% 45% 100% 0% / 0% 100% 0% 100% ' }}>
+                <p style={{transform: 'translate(-30%, -50%) rotate(90deg)'}} className='absolute left-0 top-1/2 text-5xl text-slate-600/30 font-bold'>ZETA</p>
+                <img style={{transform: 'translate(50%, 0)'}} className='absolute h-80 bottom-0 right-1/2' src="https://images.vexels.com/media/users/3/215788/isolated/preview/eef34f5740249cb9781e656b16f3ed73-sonriendo-jugando-videojuegos-chico-plano.png" alt="" />
+            </div>
+            <div className='px-10'>
+                <h2 className='text-4xl text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100 font-bold mb-10'>Commitment we've <span className='text-lime-500'>developed</span></h2>
+                <p className='text-slate-200 mb-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, voluptatum quo distinctio debitis iusto voluptatibus nostrum, deleniti ad ea maxime recusandae soluta veritatis deserunt? Id doloribus sunt velit rem enim.</p>
+            </div>
 
         </div>
 

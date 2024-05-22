@@ -1,22 +1,32 @@
 import React from 'react'
+import { useEffect } from 'react'
+
+const funcionBotones = ()=>{
+    const [itemSel, setItemSel] = useEffect(null)
+
+    const handleClick = (idx)=>{
+        setItemSel(idx)
+    }
+}
+
 
 const Ej4 = () => {
     const navBar = ["About Us", "Our Projects", "Community", "Resources"];
   return (
     <div className='w-4/5 mx-auto border bg-slate-950'>
-        <navbar className="flex justify-around items-center py-5 w-10/12 mx-auto">
+        <nav className="flex justify-around items-center py-5 w-10/12 mx-auto">
             <div className='px-1 py-1 border border-l-lime-600 border-r-slate-950 border-b-slate-950 border-t-lime-600 hover:cursor-pointer hover:scale-110'>
                 <p className='font-bold text-lime-500'>ZETA</p>
             </div>
             <ul className='flex gap-5'>
-                {navBar.map((list)=>(
-                    <li><a onClick={(e)=>e.preventDefault()} className='text-slate-600 text-sm font-bold hover:text-slate-500' href="">{list}</a></li>
+                {navBar.map((list, index)=>(
+                    <li key={index}><a onClick={(e)=>e.preventDefault()} className='text-slate-600 text-sm font-bold hover:text-slate-500' href="">{list}</a></li>
                 ))}
             </ul>
             <div>
                 <button onClick={(e)=>e.preventDefault()} className='text-slate-600 text-sm font-bold px-3 py-2 border-2 border-lime-500 rounded-lg active:bg-lime-600 active:text-black '>Sign Up</button>
             </div>
-        </navbar>
+        </nav>
         <div className='grid grid-cols-2 w-full my-10 py-10'>
             <div className='w-4/5 mx-auto'>
 
@@ -45,7 +55,7 @@ const Ej4 = () => {
             <h2 className=' mb-10 w-2/5 mx-auto text-center text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100'>Discover the <span className='text-lime-500'>world</span> <br/> based your loves</h2>
             <div className='p-10 w-4/5 mx-auto border border-slate-500 rounded-xl'>
                 <div className='flex justify-around mb-10'>
-                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>
+                    <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition' onClick={handleClickAction}>
                         <img className='h-16 w-16' src="https://cdn-icons-png.flaticon.com/512/8541/8541858.png" alt="" />
                     </div>
                     <div className='p-2 bg-lime-500 border rounded-xl hover:scale-150 transition'>

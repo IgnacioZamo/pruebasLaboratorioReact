@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useEffect } from 'react'
 
 
@@ -6,6 +6,18 @@ import { useEffect } from 'react'
 
 const Ej4 = () => {
     const navBar = ["About Us", "Our Projects", "Community", "Resources"];
+
+    const [item1, setItem1] = useState(false);
+
+    const handleClickItem= ()=>{
+
+        setItem1(true)
+
+    }
+    
+
+
+
   return (
     <div className='w-4/5 mx-auto border bg-slate-950'>
         <nav className="flex justify-around items-center py-5 w-10/12 mx-auto">
@@ -79,14 +91,36 @@ const Ej4 = () => {
             </div>                
         </div>
 
-        <div className='grid grid-cols-2 py-10'>
-            <div className='w-4/5 mr-auto bg-gradient-to-r from-lime-400 to-lime-600 relative h-64' style={{borderRadius:'55% 45% 100% 0% / 0% 100% 0% 100% ' }}>
+        <div className='grid grid-cols-2 py-10 items-center'>
+            <div className='w-4/5 mr-auto bg-gradient-to-r from-lime-400 to-lime-600 relative h-64 ' style={{borderRadius:'55% 45% 100% 0% / 0% 100% 0% 100% ' }}>
                 <p style={{transform: 'translate(-30%, -50%) rotate(90deg)'}} className='absolute left-0 top-1/2 text-5xl text-slate-600/30 font-bold'>ZETA</p>
                 <img style={{transform: 'translate(50%, 0)'}} className='absolute h-80 bottom-0 right-1/2' src="https://images.vexels.com/media/users/3/215788/isolated/preview/eef34f5740249cb9781e656b16f3ed73-sonriendo-jugando-videojuegos-chico-plano.png" alt="" />
             </div>
             <div className='px-10'>
                 <h2 className='text-4xl text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100 font-bold mb-10'>Commitment we've <span className='text-lime-500'>developed</span></h2>
                 <p className='text-slate-200 mb-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, voluptatum quo distinctio debitis iusto voluptatibus nostrum, deleniti ad ea maxime recusandae soluta veritatis deserunt? Id doloribus sunt velit rem enim.</p>
+                <div className='flex flex-col gap-5'>
+
+
+                    <div onClick={handleClickItem} className= {`w-4/5 mx-auto py-4 border border-slate-500  rounded-lg flex items-center gap-10 hover:cursor-pointer ${item1==true? "bg-red-500": ""}`} >
+                        <div className='bg-lime-500 rounded-lg mx-4'>
+                            <img className='h-8' src="https://static.thenounproject.com/png/110006-200.png" alt="" />
+                        </div>
+                        <h3 className='text-slate-400 text-lg font-semibold'>Inmersive Learning System</h3>
+                    </div>
+                    <div className='w-4/5 mx-auto py-4 border border-slate-500  rounded-lg flex items-center gap-10 hover:cursor-pointer'>
+                        <div className='bg-lime-500 rounded-lg mx-4'>
+                            <img className='h-8' src="https://static.thenounproject.com/png/110006-200.png" alt="" />
+                        </div>
+                        <h3 className='text-slate-400 text-lg font-semibold'>Responsible Research</h3>
+                    </div>
+                    <div className='w-4/5 mx-auto py-4 border border-slate-500  rounded-lg flex items-center gap-10 hover:cursor-pointer'>
+                        <div className='bg-lime-500 rounded-lg mx-4'>
+                            <img className='h-8' src="https://static.thenounproject.com/png/110006-200.png" alt="" />
+                        </div>
+                        <h3 className='text-slate-400 text-lg font-semibold'>Responsible Renovation</h3>
+                    </div>
+                </div>
             </div>
 
         </div>

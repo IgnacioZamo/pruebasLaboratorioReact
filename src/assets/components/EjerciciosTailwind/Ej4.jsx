@@ -7,11 +7,16 @@ import { useEffect } from 'react'
 const Ej4 = () => {
     const navBar = ["About Us", "Our Projects", "Community", "Resources"];
 
-    const [item1, setItem1] = useState(false);
+    const itemsDesplegables = [ {txt:"Inmersive Learning System"},
+                                {txt:"Responsible Research"},
+                                {txt:"Responsible Renovation"}
+    ]
 
-    const handleClickItem= ()=>{
+    const [item1, setItem1] = useState(null);
 
-        setItem1(true)
+    const handleClickItem= (indice)=>{
+
+        setItem1(indice)
 
     }
     
@@ -100,26 +105,16 @@ const Ej4 = () => {
                 <h2 className='text-4xl text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100 font-bold mb-10'>Commitment we've <span className='text-lime-500'>developed</span></h2>
                 <p className='text-slate-200 mb-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, voluptatum quo distinctio debitis iusto voluptatibus nostrum, deleniti ad ea maxime recusandae soluta veritatis deserunt? Id doloribus sunt velit rem enim.</p>
                 <div className='flex flex-col gap-5'>
+                    
+                    {itemsDesplegables.map((abc,indice) =>(
+                        <div key={indice} onClick={handleClickItem} className= {`w-4/5 mx-auto py-4 border border-slate-500  rounded-lg flex items-center gap-10 hover:cursor-pointer ${item1==indice? "bg-red-500": ""}`} >
+                        <div className='bg-lime-500 rounded-lg mx-4'>
+                            <img className='h-8' src="https://static.thenounproject.com/png/110006-200.png" alt="" />
+                        </div>
+                        <h3 className='text-slate-400 text-lg font-semibold'>{abc.txt}</h3>
+                    </div>
+                    ))}
 
-
-                    <div onClick={handleClickItem} className= {`w-4/5 mx-auto py-4 border border-slate-500  rounded-lg flex items-center gap-10 hover:cursor-pointer ${item1==true? "bg-red-500": ""}`} >
-                        <div className='bg-lime-500 rounded-lg mx-4'>
-                            <img className='h-8' src="https://static.thenounproject.com/png/110006-200.png" alt="" />
-                        </div>
-                        <h3 className='text-slate-400 text-lg font-semibold'>Inmersive Learning System</h3>
-                    </div>
-                    <div className='w-4/5 mx-auto py-4 border border-slate-500  rounded-lg flex items-center gap-10 hover:cursor-pointer'>
-                        <div className='bg-lime-500 rounded-lg mx-4'>
-                            <img className='h-8' src="https://static.thenounproject.com/png/110006-200.png" alt="" />
-                        </div>
-                        <h3 className='text-slate-400 text-lg font-semibold'>Responsible Research</h3>
-                    </div>
-                    <div className='w-4/5 mx-auto py-4 border border-slate-500  rounded-lg flex items-center gap-10 hover:cursor-pointer'>
-                        <div className='bg-lime-500 rounded-lg mx-4'>
-                            <img className='h-8' src="https://static.thenounproject.com/png/110006-200.png" alt="" />
-                        </div>
-                        <h3 className='text-slate-400 text-lg font-semibold'>Responsible Renovation</h3>
-                    </div>
                 </div>
             </div>
 

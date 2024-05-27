@@ -13,7 +13,12 @@ const Ej4 = () => {
 
     const handleClickItem= (indice)=>{
 
-        setItem1(indice);
+        if(item1 !== indice){
+            setItem1(indice);
+        } else{
+            setItem1(null);
+        }
+
 
     };
     
@@ -104,12 +109,14 @@ const Ej4 = () => {
                 <div className='flex flex-col gap-5'>
                     
                     {itemsDesplegables.map((abc,indice) =>(
-                        <div key={indice} onClick={()=> handleClickItem(indice)} className= {`w-4/5 mx-auto py-4 border border-slate-500 rounded-lg flex items-center gap-10 hover:cursor-pointer ${item1==indice? "transition ease-in bg-lime-500": ""}`} >
-                            <div className='bg-lime-500 rounded-lg mx-4'>
-                                <img className='h-8' src="https://static.thenounproject.com/png/110006-200.png" alt="" />
+                        <div key={indice} onClick={()=> handleClickItem(indice)} className= {`w-4/5 mx-auto py-4 border border-slate-500 rounded-lg flex flex-col items-center gap-5 hover:cursor-pointer ${item1==indice? "transition ease-in bg-lime-500": ""}`} >
+                            <div className='flex gap-5 items-center w-full'>
+                                <div className='bg-lime-500 rounded-lg mx-4'>
+                                    <img className='h-8' src="https://static.thenounproject.com/png/110006-200.png" alt="" />
+                                </div>
+                                <h3 className={`${item1==indice? "text-slate-800 text-lg font-semibold":"text-slate-200 text-lg font-semibold"} `}>{abc.txt}</h3>
                             </div>
-                            <h3 className={`${item1==indice? "text-slate-800 text-lg font-semibold":"text-slate-200 text-lg font-semibold"} `}>{abc.txt}</h3> <br />
-                            <div className={`${item1==indice? "":"hidden"} `}><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae hic minima ab voluptas fuga est aspernatur, minus aut veniam ut sed sequi repellat commodi obcaecati accusamus tenetur expedita odit rem assumenda ducimus alias doloribus quia ex. Consequatur, voluptatum est. Vero architecto mollitia placeat, sunt veritatis quia quibusdam dolorem necessitatibus!</p></div>
+                            <div className={`${item1==indice? "":"hidden"} `}><p className='px-10 transition ease-in'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore, aut debitis, adipisci cumque, autem itaque laboriosam rem id unde eius esse cupiditate praesentium culpa?</p></div>
                         </div>
                         
                     ))}

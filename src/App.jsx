@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
-import ReactPage from "./assets/components/pages/react";
-import TailwindPage from "./assets/components/pages/tailwind";
-import NavBar from "./assets/components/navbar/NavBar";
+import ReactPage from "./components/pages/react";
+import TailwindPage from "./components/pages/tailwind";
+import NavBar from "./components/navbar/NavBar";
 
 function App() {
   return (

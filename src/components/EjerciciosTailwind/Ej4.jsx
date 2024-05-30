@@ -23,8 +23,6 @@ const Ej4 = () => {
     };
     
 
-
-
   return (
     <div className='w-4/5 mx-auto border bg-slate-950'>
         <nav className="flex justify-around items-center py-5 w-10/12 mx-auto">

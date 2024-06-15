@@ -6,7 +6,7 @@ const Ej3 = () => {
         <div
         className="bg-cover bg-center w-full h-auto"
         style={{ backgroundImage: "url('https://img.freepik.com/foto-gratis/fondo-hojas-verdes-tropicales_53876-88891.jpg')" }}>
-            <div className='w-full h-20 backdrop-blur-lg flex items-center'>
+            <div className='w-full h-20 backdrop-blur-sm flex items-center'>
                 <div className='flex justify-between items-center px-10  w-full'>
                     <img className='h-12 hover:cursor-pointer' src="https://images.vexels.com/media/users/3/224235/isolated/preview/c9b0be525cc3bace6e7e91667d7d6bb0-logotipo-abstracto-naranja.png" alt="" />
                     <ul className='flex gap-5 items-center'>

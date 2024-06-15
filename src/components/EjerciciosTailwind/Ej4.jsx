@@ -45,7 +45,7 @@ const Ej4 = () => {
 
                 <h2 className='text-5xl text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100 font-bold mb-10'>Let's explore your own <span className='text-lime-500'>VR</span> world</h2>
                 <p className='text-slate-100 mb-10'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium consequuntur odio eum, impedit ex necessitatibus sed enim exercitationem nulla alias nihil aspernatur nesciunt? Similique!
+                    consectetur adipisicing elit. Quisquam praesentium consequuntur odio eum, impedit ex necessitatibus sed enim exercitationem nulla alias nihil aspernatur nesciunt? Similique!
                 </p>
                 <div className='flex justify-around'>
                     <button className='bg-gradient-to-r from-lime-400 via-lime-500 to-lime-400 px-3 py-2 rounded-xl font-bold text-sm active:text-slate-200'>Explore Now</button>
@@ -105,7 +105,6 @@ const Ej4 = () => {
                 <h2 className='text-4xl text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100 font-bold mb-10'>Commitment we've <span className='text-lime-500'>developed</span></h2>
                 <p className='text-slate-200 mb-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, voluptatum quo distinctio debitis iusto voluptatibus nostrum, deleniti ad ea maxime recusandae soluta veritatis deserunt? Id doloribus sunt velit rem enim.</p>
                 <div className='flex flex-col gap-5'>
-                    
                     {itemsDesplegables.map((abc,indice) =>(
                         <div key={indice} onClick={()=> handleClickItem(indice)} className= {`w-4/5 mx-auto py-4 border border-slate-500 rounded-lg flex flex-col items-center gap-5 hover:cursor-pointer ${item1==indice? "transition ease-in bg-lime-500": ""}`} >
                             <div className='flex gap-5 items-center w-full'>
@@ -116,9 +115,7 @@ const Ej4 = () => {
                             </div>
                             <div className={`${item1==indice? "":"hidden"} `}><p className='px-10 transition ease-in'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore, aut debitis, adipisci cumque, autem itaque laboriosam rem id unde eius esse cupiditate praesentium culpa?</p></div>
                         </div>
-                        
                     ))}
-
                 </div>
             </div>
 

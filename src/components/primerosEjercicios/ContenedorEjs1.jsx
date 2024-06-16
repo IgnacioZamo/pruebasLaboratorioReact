@@ -3,6 +3,7 @@ import Ej2 from "./ej1-2";
 import Ej3 from "./ej1-3";
 import Ej4 from "./ej1-4";
 import Ej5 from "./ej1-5";
+import Ej6 from "./ej1-6";
 
 
 const ContenedorEjs1 = ()=>{
@@ -13,6 +14,7 @@ const ContenedorEjs1 = ()=>{
             <Ej3/>
             <Ej4/>
             <Ej5/>
+            <Ej6/>
         </div>
     )
 }

@@ -7,7 +7,6 @@ const ej1_6 = () => {
     const handleClickButton = ()=>{
         transicionRef.current.className = 'absolute left-1/2 top-0 transition'
 
-
     }
 
 

@@ -2,6 +2,7 @@ import Ej1 from "./ej1"
 import Ej2 from "./Ej2"
 import Ej3 from "./Ej3";
 import Ej4 from "./Ej4"
+import Ej5 from "./Ej5";
 
 
 const ContenedorTailwind = () => {
@@ -11,6 +12,7 @@ const ContenedorTailwind = () => {
         <Ej2/>
         <Ej3/>
         <Ej4/>
+        <Ej5/>
 
     </div>
   )

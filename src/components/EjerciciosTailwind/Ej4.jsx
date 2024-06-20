@@ -118,6 +118,18 @@ const Ej4 = () => {
                     ))}
                 </div>
             </div>
+        </div>
+        <div className='grid grid-cols-2 py-10 items-center w-4/5 mx-auto'>
+            <div className='flex flex-col'>
+                <h2 className='text-4xl text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-slate-200 to-slate-100 font-bold mb-5'>Building your <span className='text-lime-500'>own world</span> now</h2>
+                <p className='text-slate-300 text-lg mb-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam hic, quis perferendis deleniti deserunt cupiditate itaque eius tenetur accusamus et.</p>
+                <div className='flex'>
+                    <div className='flex py-3 px-5 border border-slate-200 rounded-lg'>
+                        
+
+                    </div>
+                </div>
+            </div>
 
         </div>
 
